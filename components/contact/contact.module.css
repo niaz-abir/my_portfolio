@@ -1,0 +1,56 @@
+/* .btnAll {
+  background-color: cornflowerblue;
+  color: blueviolet;
+} */
+/* .btnAll:hover,
+.btnAll:focus {
+  box-shadow: inset 6.5em 0 0 0 #0cf574;
+  width: 100%;
+} */
+
+/* .btnAll {
+  position: relative;
+}
+.btnAll:hover {
+  width: 100%;
+  height: 100%;
+  background: green;
+  mix-blend-mode: lighten;
+  transition: all 0.5s ease;
+  transform-origin: center;
+  transform: scale(0);
+}
+.btnAll:hover:after {
+  transform: scale(1);
+  transition: 1.2s;
+} */
+
+/* .btnAll{
+    background: green;
+    transition: all 0.5s green;
+    .btnAll:after{
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      mix-blend-mode: lighten;
+      background: green;
+      transition: all 0.5s $greeen;
+    }
+    .btnAll:hover{
+      background: transparent;
+    }
+    .btnAll:hover:after{
+      width: 100%;
+      height: 100%;
+    }
+  } */
+.btnAll {
+  background-color: #101f30;
+}
+.btnAll:hover,
+.btnAll:focus {
+  box-shadow: inset 6.5em 0 0 0 #0cf574;
+  transition: 0.9s;
+  background-color: #162a40;
+}

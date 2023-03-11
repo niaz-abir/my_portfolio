@@ -1,0 +1,12 @@
+.btnProject {
+  background-color: #101f30;
+}
+.btnProject:hover,
+.btnProject:focus {
+  box-shadow: inset 6.5em 0 0 0 #0cf574;
+  transition: 0.9s;
+  background-color: #162a40;
+}
+.liveSite {
+  color: #e9a178;
+}
