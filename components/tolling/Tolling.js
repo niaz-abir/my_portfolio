@@ -12,52 +12,55 @@ import { FaBootstrap } from "react-icons/fa";
 const Tolling = () => {
   return (
     <div className="py-14">
-      <h1 className="text-center text-4xl font-bold text-accent-400 tracking-widest mb-8 md:mb-10">
+      <h1 className="mb-4 text-4xl font-bold tracking-widest text-center font-primary text-accent-400 ">
         Tooling
       </h1>
+       <div className="flex justify-center mb-10">
+        <hr className="w-24"></hr>
+      </div>
       <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 text-white text-xl mx-auto lg:max-w-[60rem]">
-        <div className="flex items-center justify-center gap-3 bg-dark-300 p-5">
+        <div className="flex items-center justify-center gap-3 bg-[#060d06] p-5">
           {" "}
-          <DiReact className="text-sky-400 text-4xl"></DiReact>
+          <DiReact className="text-4xl text-sky-400"></DiReact>
           <h1>React</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 bg-dark-300 p-5">
-          <DiJavascript1 className="text-yellow-400 text-4xl"></DiJavascript1>
+        <div className="flex items-center justify-center gap-3 p-5 bg-[#060d06]">
+          <DiJavascript1 className="text-4xl text-yellow-400"></DiJavascript1>
           <h1>Javascript</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 bg-dark-300 p-5">
-          <SiVercel className="text-black text-4xl"></SiVercel>
+        <div className="flex items-center justify-center gap-3 p-5 bg-[#060d06]">
+          <SiVercel className="text-4xl text-black"></SiVercel>
           <h1>Nextjs</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 bg-dark-300 p-5">
-          <SiTypescript className="text-sky-400 text-4xl"></SiTypescript>
+        <div className="flex items-center justify-center gap-3 p-5 bg-[#060d06]">
+          <SiTypescript className="text-4xl text-sky-400"></SiTypescript>
           <h1>Typescript</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 bg-dark-300 p-5">
-          <TbBrandTailwind className="text-sky-400 text-4xl"></TbBrandTailwind>
+        <div className="flex items-center justify-center gap-3 p-5 bg-[#060d06]">
+          <TbBrandTailwind className="text-4xl text-sky-400"></TbBrandTailwind>
           <h1>Tailwind</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 bg-dark-300 p-5">
+        <div className="flex items-center justify-center gap-3 p-5 bg-[#060d06]">
           {" "}
-          <SiFirebase className="text-yellow-400 text-4xl"></SiFirebase>
+          <SiFirebase className="text-4xl text-yellow-400"></SiFirebase>
           <h1>Firebase</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 bg-dark-300 p-5">
-          <SiMongodb className="text-green-700 text-4xl"></SiMongodb>
+        <div className="flex items-center justify-center gap-3 p-5 bg-[#060d06]">
+          <SiMongodb className="text-4xl text-green-700"></SiMongodb>
           <h1>MongoDB</h1>
         </div>
 
-        <div className="flex items-center justify-center gap-3 bg-dark-300 p-5">
-          <SiChakraui className=" text-blue-400 text-4xl"></SiChakraui>
+        <div className="flex items-center justify-center gap-3 p-5 bg-[#060d06]">
+          <SiChakraui className="text-4xl text-blue-400 "></SiChakraui>
           <h1>ChakraUI</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 bg-dark-300 p-5">
-          <IoLogoSass className="text-pink-600 text-4xl"></IoLogoSass>
+        <div className="flex items-center justify-center gap-3 p-5 bg-[#060d06]">
+          <IoLogoSass className="text-4xl text-pink-600"></IoLogoSass>
           <h1>Sass</h1>
         </div>
 
-        <div className="flex items-center justify-center gap-3 bg-dark-300 p-5">
-          <FaBootstrap className="text-purple-600 text-4xl"></FaBootstrap>
+        <div className="flex items-center justify-center gap-3 p-5 bg-[#060d06]">
+          <FaBootstrap className="text-4xl text-purple-600"></FaBootstrap>
           <h1>Bootstrap</h1>
         </div>
       </div>

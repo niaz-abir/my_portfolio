@@ -10,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+       fontFamily: {
+        primary: "Charis SIL",
+        secondary:"Oswald', sans-serif"
+      },
       colors: {
         "light-300": "#ffffff",
         "light-400": "#e8ebee",
@@ -18,8 +22,9 @@ module.exports = {
         "dark-300": "#162a40",
         "dark-400": "#101f30",
         "dark-500": "#0e1a28",
+        "dark-600":"#030703",
 
-        "accent-400": "#0CF574",
+        "accent-400": "#DB2955",
       },
     },
   },

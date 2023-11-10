@@ -7,10 +7,10 @@ const projectDetail = ({ filteredProject }) => {
   return (
     <section className=" w-[25rem] lg:w-[80rem] mx-auto mt-16 mb-32">
       {/* banner image */}
-      <h1 className="text-3xl font-bold text-center text-white my-8">
+      <h1 className="my-8 text-3xl font-bold text-center text-white font-primary">
         Details of {filteredProject.project_name}
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center justify-items-center p-4 lg:p-1 ">
+      <div className="grid items-center justify-center grid-cols-1 gap-10 p-4 md:grid-cols-2 justify-items-center lg:p-1 ">
         <div>
           <Image
             src={`/images/projects/${filteredProject?.banner_pic}`}
@@ -28,10 +28,10 @@ const projectDetail = ({ filteredProject }) => {
       {/* key features section  */}
 
       <div>
-        <h1 className="text-3xl font-bold text-center mt-8 mb-8 text-white ">
+        <h1 className="mt-8 mb-8 text-3xl font-bold text-center text-white font-primary ">
           Key Feature of this project
         </h1>
-        <div className="flex flex-col lg:flex-row gap-6 items-center justify-items-center justify-center mt-14 mb-14 p-4 lg:p-1">
+        <div className="flex flex-col items-center justify-center gap-6 p-4 lg:flex-row justify-items-center mt-14 mb-14 lg:p-1">
           <div>
             <div className="card w-[400px] lg:w-[500px] rounded-none  p-4 lg:p-1">
               <figure>
@@ -70,7 +70,7 @@ const projectDetail = ({ filteredProject }) => {
       </div>
       {/* screenshort of feature */}
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center items-center p-4 lg:p-1">
+      <div className="grid items-center grid-cols-1 gap-6 p-4 lg:grid-cols-2 justify-items-center lg:p-1">
         <div>
           <Image
             src={`/images/projects/${filteredProject?.project_screenshortOne}`}

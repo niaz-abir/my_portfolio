@@ -2,24 +2,29 @@ import Link from "next/link";
 import Image from "next/image";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
-import { TbListDetails } from "react-icons/tb";
+import{GrWebcam} from "react-icons/gr"
+import { FaGithubAlt} from "react-icons/fa";
 import styles from "./AllProject.module.css";
+
 
 const AllProject = ({ projects }) => {
   return (
     <section className="" id="project">
-      <h1 className="text-accent-400 text-center text-4xl font-bold mb-8 ">
+      <h1 className="mb-4 text-4xl font-bold text-center font-primary text-accent-400 ">
         My Project
       </h1>
+      <div className="flex justify-center mb-10">
+        <hr className="w-24 "></hr>
+      </div>
       <div
-        className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-6 items-center "
+        className="grid items-center grid-cols-1 gap-6 lg:grid-cols-2 justify-items-center "
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="2000"
       >
         {projects?.map((project) => (
           <div key={project?.id}>
-            <div className="card w-[410px] lg:w-[450px] bg-dark-400 rounded-none p-4 h-[450px] lg:h-[430px] shadow-xl">
+            <div className="card w-[410px] lg:w-[450px] bg-[#060d06] rounded-none p-6 h-[450px] lg:h-[430px] shadow-xl">
               <Image
                 src={`/images/projects/${project?.image}`}
                 alt=""
@@ -27,26 +32,47 @@ const AllProject = ({ projects }) => {
                 width="500"
               ></Image>
               <div className="mt-4 text-white">
-                <h1 className="text-xl mt-4 mb-2">{project?.project_name}</h1>
-                <div className="  flex flex-wrap flex-row gap-2">
+                <h1 className="mt-4 mb-2 text-xl">{project?.project_name}</h1>
+                <div className="flex flex-row flex-wrap gap-2 ">
                   {project?.tools?.map((tool, i) => (
-                    <p className="bg-dark-300 p-2 " key={i}>
+                    <p className="p-2 bg-[#040904] " key={i}>
                       {tool}
                     </p>
                   ))}
                 </div>
-                <div className="flex  mt-7 justify-between">
+                <div className="flex justify-between mt-7">
                   <div className="flex flex-row mt-2">
                     <Link href={project.live_link} target="_blank">
-                      <AiFillPlayCircle className="text-3xl mr-2 liveSite text-[#8EA7E9] "></AiFillPlayCircle>
+                      <AiFillPlayCircle className="text-3xl mr-2 mt-1 liveSite text-[#8EA7E9] "></AiFillPlayCircle>
                     </Link>
-                    <Link href={project.github} target="_blank">
-                      <AiFillGithub className="text-3xl text-[#FF8DC7]"></AiFillGithub>
+                      <Link href={project.github_client} target="_blank" className="flex items-center" >
+                      <div className="group">
+                            <AiFillGithub  className="text-3xl mr-2 text-[#FF8DC7]"></AiFillGithub>
+                             <span className="absolute px-2 py-1 ml-2 text-xs font-bold transition-opacity transform -translate-x-1/2 rounded-md opacity-0 text-accent-400 group-hover:opacity-100">
+                                 Client-repo
+                             </span>
+                      </div>
+                     
                     </Link>
+
+
+
+                    
+                   
+                    <Link href={project.github_server} target="_blank" className="flex items-center" >
+                      <div className="group">
+                            <FaGithubAlt className="text-3xl text-[#57A773]"></FaGithubAlt>
+                             <span className="absolute px-2 py-1 ml-2 text-xs font-bold transition-opacity transform -translate-x-1/2 rounded-md opacity-0 text-accent-400 group-hover:opacity-100">
+      Server-repo
+    </span>
+                      </div>
+                     
+                    </Link>
+                   
                   </div>
                   <Link
                     href={`/projectDetails/${project?.id}`}
-                    className={`${styles.btnProject} btn rounded-none out border-accent-400 hover:text-black font-semibold`}
+                    className={`${styles.btnProject} btn rounded-[3px] out border-accent-400 bg-accent-400 hover:text-black font-semibold`}
                   >
                     {" "}
                     Details
