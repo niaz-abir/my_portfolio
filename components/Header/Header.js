@@ -2,48 +2,127 @@ import Link from "next/link";
 import { MdOutlineManageAccounts } from "react-icons/md";
 import { RiCommandFill } from "react-icons/ri";
 import { RiMenuAddFill } from "react-icons/ri";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import styles from "./header.module.css";
+import working17 from "../../public/Animation3 (1).json";
+
+import Lottie from "lottie-react";
 const Header = () => {
   return (
-    <div className="navbar flex justify-between  text-white">
+    <div className="flex justify-between text-white  shadow-md navbar shadow-[#231427]">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            <RiMenuAddFill className="h-5 w-5"></RiMenuAddFill>
+            <RiMenuAddFill className="w-5 h-5"></RiMenuAddFill>
           </label>
+
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52"
+            className="p-2 mt-3 shadow menu menu-compact dropdown-content rounded-box w-52"
           >
-            <Link href="/about" className={`${styles.navMenu} mr-2`}>
-              About
-            </Link>
+            {/* <Link href="/about">About</Link>
             <Link href="/contact" className={`${styles.navMenu} mr-2`}>
               Contact
             </Link>
             <Link href={"/article"} className={`${styles.navMenu} pr-2`}>
               Article
+            </Link> */}
+            <Link
+              href={"/about"}
+              className="pl-4 text-[18px] hover:bg-[#231427] pt-2 duration-300 capitalize font-semibold pr-4"
+            >
+              About
+              <hr className="border-t-2 border-[#4a2453]"></hr>
             </Link>
+
+            <Link
+              href="#project"
+              className="pl-4 text-[18px] hover:bg-[#231427] pt-2 duration-300 capitalize font-semibold pr-4"
+            >
+              project
+              <hr className="border-t-2 border-[#4a2453]"></hr>
+            </Link>
+            <Link
+              href={"/article"}
+              className="pl-4 text-[18px] hover:bg-[#231427] pt-2 duration-300 capitalize font-semibold pr-4"
+            >
+              Article
+              <hr className="border-t-2 border-[#4a2453]"></hr>
+            </Link>
+            <div className="mt-6">
+              <Link
+                href="/"
+                className="px-4 py-3 mt-2 ml-2 hover:bg-[#4a2453] duration-300 border border-[#4a2453] "
+              >
+                <button className="font-bold">Lets Connect</button>
+              </Link>
+            </div>
           </ul>
         </div>
-        <MdOutlineManageAccounts className="text-accent-400 text-[25px] hidden lg:flex"></MdOutlineManageAccounts>
-        <a className="btn btn-ghost normal-case text-xl">Niaz Abir</a>
+        <div className="flex items-center ">
+          <div>
+            <Lottie
+              className="w-16 lg:w-24"
+              animationData={working17}
+              loop={true}
+            ></Lottie>
+          </div>
+          <div>
+            <a className=" hidden mt-8 lg:block lg:text-[1.4rem] normal-case btn btn-ghost font-primary">
+              Niaz Abir
+            </a>
+          </div>
+          <a className="block lg:hidden mt-8 lg:text-[1.4rem] normal-case btn btn-ghost font-primary">
+            Niaz Abir
+          </a>
+        </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <Link href={"/about"} className={`${styles.navMenu} mr-2`}>
+      <div className="hidden navbar-center lg:flex">
+        <ul className="px-1 menu menu-horizontal">
+          <Link
+            href={"/about"}
+            className="pl-4 text-[18px] hover:bg-[#231427] pt-2 duration-300 capitalize font-semibold pr-4"
+          >
             About
+            <hr className="border-t-2 border-[#4a2453]"></hr>
           </Link>
-          <Link href={"/contact"} className={`${styles.navMenu} mr-2`}>
-            Contact
+
+          <Link
+            href="#project"
+            className="pl-4 text-[18px] hover:bg-[#231427] pt-2 duration-300 capitalize font-semibold pr-4"
+          >
+            project
+            <hr className="border-t-2 border-[#4a2453]"></hr>
           </Link>
-          <Link href={"/article"} className={`${styles.navMenu} pr-2`}>
+          <Link
+            href={"/article"}
+            className="pl-4 text-[18px] hover:bg-[#231427] pt-2 duration-300 capitalize font-semibold pr-4"
+          >
             Article
+            <hr className="border-t-2 border-[#4a2453]"></hr>
           </Link>
+
+          {/* <Link href="/" className="p-2 ml-6 border border-white rounded-full">
+            <FaLinkedinIn></FaLinkedinIn>
+          </Link>
+          <Link href="/" className="p-2 border border-white rounded-full">
+            <FaGithub></FaGithub>
+          </Link> */}
         </ul>
+
+        <div>
+          <Link
+            href="#connect"
+            className="px-4 py-3 mt-2 ml-2 hover:bg-[#4a2453] duration-300 border border-[#4a2453] "
+          >
+            <button className="font-bold">Lets Connect</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Header;
+// className={`${styles.navMenu} mr-2`}

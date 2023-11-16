@@ -6,9 +6,12 @@ import { AiOutlineFacebook } from "react-icons/ai";
 import Link from "next/link";
 const Connect = () => {
   return (
-    <div className=" text-white text-2xl mb-18  lg:max-w-[40rem] mb-32">
+    <div
+      className=" text-white  text-2xl mb-18  lg:max-w-[40rem] mb-32"
+      id="connect"
+    >
       <div>
-        <h1 className="text-4xl text-accent-400 font-bold">
+        <h1 className="text-4xl font-bold text-accent-400">
           Dont be a stranger{" "}
         </h1>
         <h1 className="text-1xl">Connect with me online</h1>
@@ -17,25 +20,25 @@ const Connect = () => {
           <Link
             href={"https://github.com/niaz-abir"}
             target="_blank"
-            className="flex flex-row gap-2 items-center"
+            className="flex flex-row items-center gap-2"
           >
             <h1>Github</h1>
             <AiFillGithub className="text-[#FF8DC7]"></AiFillGithub>
           </Link>
-          {/* <div className="flex flex-row gap-2 items-center">
+          {/* <div className="flex flex-row items-center gap-2">
             <h1>Instagram</h1>
-            <FiInstagram className="text-green-600 mr-3"></FiInstagram>
+            <FiInstagram className="mr-3 text-green-600"></FiInstagram>
           </div> */}
 
           <Link
             href={"https://www.linkedin.com/in/niaz-uddin-abir/"}
             target="_blank"
-            className="flex flex-row gap-2 items-center"
+            className="flex flex-row items-center gap-2"
           >
             <h1>Linkedin</h1>
             <AiFillLinkedin className="text-[#00ABB3]"></AiFillLinkedin>
           </Link>
-          <div className="flex flex-row gap-2 items-center">
+          <div className="flex flex-row items-center gap-2">
             <h1>Twitter</h1>
             <ImTwitter className="text-[#674188]"></ImTwitter>
           </div>
@@ -43,7 +46,7 @@ const Connect = () => {
           <Link
             href={"https://www.facebook.com/profile.php?id=100078852913727"}
             target="_blank"
-            className="flex flex-row gap-2 items-center"
+            className="flex flex-row items-center gap-2"
           >
             <h1>Facebook</h1>
             <AiOutlineFacebook className="text-[#82AAE3]"></AiOutlineFacebook>

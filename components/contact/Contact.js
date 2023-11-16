@@ -44,7 +44,7 @@ const Contact = () => {
         <div className="flex justify-center mb-10">
           <hr className="w-24"></hr>
         </div>
-        
+
         {/* <h1>Lets Talk</h1> */}
       </div>
 
@@ -72,21 +72,21 @@ const Contact = () => {
             className="grid gap-10 p-6 border"
           >
             <input
-              className="p-2 text-white transition-all border-b outline-none bg-[#1f251f] focus:border-accent-400"
+              className="p-2 text-white transition-all border-b outline-none bg-[#010b1c] focus:border-accent-400"
               type="text"
               placeholder=" Name"
               name="user_name"
             ></input>
 
             <input
-              className="p-2 text-white transition-all border-b outline-none bg-[#1f251f] focus:border-accent-400"
+              className="p-2 text-white transition-all border-b outline-none bg-[#010b1c] focus:border-accent-400"
               type="text"
               placeholder=" Email"
               name="user_email"
             ></input>
             <textarea
               name="message"
-              className="bg-[#1f251f] text-white border-b outline-none focus:border-accent-400 transition-all p-2 resize-none overflow-hidden min-h-[8rem]"
+              className="bg-[#010b1c] text-white border-b outline-none focus:border-accent-400 transition-all p-2 resize-none overflow-hidden min-h-[8rem]"
               type="text"
               placeholder=" Message"
             ></textarea>
@@ -94,6 +94,7 @@ const Contact = () => {
             <button className={`${styles.btnAll} btn rounded-none`}>
               Send Message
             </button>
+
             {/* 
             <button className="rounded-none btn bg-accent-400 text-dark-500 hover:text-accent-400">
               Send Message

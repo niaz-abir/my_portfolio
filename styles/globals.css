@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Charis+SIL&family=Oswald:wght@700&family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,6 +13,6 @@
 
 html,
 body {
-  @apply bg-dark-600;
+  @apply bg-gradient-to-r from-[#231427] via-[#1d1120] to-[#010b1c];
   overflow-x: hidden;
 }
