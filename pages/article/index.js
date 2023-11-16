@@ -5,7 +5,7 @@ const Article = () => {
     <div className="flex justify-center">
       <div className="mt-32 mb-32 h-[100vh]">
         <h1 className="text-2xl font-bold text-center text-white">
-          Article is coming...
+          Article is coming....
         </h1>
 
         <Link href="/">
