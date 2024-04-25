@@ -8,6 +8,7 @@ import { SiMongodb } from "react-icons/si";
 import { SiChakraui } from "react-icons/si";
 import { IoLogoSass } from "react-icons/io";
 import { FaBootstrap } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
 import working17 from "../../public/second.json";
 
 import Lottie from "lottie-react";
@@ -54,8 +55,8 @@ const Tolling = () => {
         </div>
 
         <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
-          <SiChakraui className="text-4xl text-blue-400 "></SiChakraui>
-          <h1>ChakraUI</h1>
+          <SiRedux className="text-4xl text-blue-400 "></SiRedux>
+          <h1>Redux</h1>
         </div>
         <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
           <IoLogoSass className="text-4xl text-pink-600"></IoLogoSass>
@@ -63,8 +64,8 @@ const Tolling = () => {
         </div>
 
         <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
-          <FaBootstrap className="text-4xl text-purple-600"></FaBootstrap>
-          <h1>Bootstrap</h1>
+          <SiChakraui className="text-4xl text-purple-600"></SiChakraui>
+          <h1>ShadcnUi</h1>
         </div>
       </div>
     </div>

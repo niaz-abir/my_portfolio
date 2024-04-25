@@ -21,13 +21,6 @@ const Header = () => {
             tabIndex={0}
             className="p-2 mt-3 shadow menu menu-compact dropdown-content rounded-box w-52"
           >
-            {/* <Link href="/about">About</Link>
-            <Link href="/contact" className={`${styles.navMenu} mr-2`}>
-              Contact
-            </Link>
-            <Link href={"/article"} className={`${styles.navMenu} pr-2`}>
-              Article
-            </Link> */}
             <Link
               href={"/about"}
               className="pl-4 text-[18px] hover:bg-[#231427] pt-2 duration-300 capitalize font-semibold pr-4"
@@ -102,13 +95,6 @@ const Header = () => {
             Article
             <hr className="border-t-2 border-[#4a2453]"></hr>
           </Link>
-
-          {/* <Link href="/" className="p-2 ml-6 border border-white rounded-full">
-            <FaLinkedinIn></FaLinkedinIn>
-          </Link>
-          <Link href="/" className="p-2 border border-white rounded-full">
-            <FaGithub></FaGithub>
-          </Link> */}
         </ul>
 
         <div>
@@ -125,4 +111,3 @@ const Header = () => {
 };
 
 export default Header;
-// className={`${styles.navMenu} mr-2`}

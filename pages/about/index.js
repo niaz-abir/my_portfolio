@@ -6,12 +6,6 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 
 const About = () => {
-  // useEffect(() => {
-  //     AOS.init({
-  //       delay: 400,
-  //       duration: 800,
-  //     });
-  //   });
   return (
     <>
       <div className="w-full pl-4 pr-4 mx-auto lg:w-2/3">
@@ -54,6 +48,11 @@ const About = () => {
               not only meet but exceed client expectations, bringing a fresh
               perspective and creative solutions to the table.
             </p>
+            <div className="mt-4 font-bold">
+              <p>Diploma in computer science engineering</p>
+              <p>Chittagong polytechnic institute</p>
+              <p>2019-2023</p>
+            </div>
             <div className="flex justify-center gap-4 mt-4 lg:justify-start">
               <Link
                 href="#project"
@@ -79,13 +78,6 @@ const About = () => {
               </Link>
             </div>
           </div>
-          {/* <Image
-          className="rounded-md "
-          src="/profile7.png"
-          alt=""
-          width="500"
-          height="200"
-        ></Image> */}
         </div>
       </div>
     </>
