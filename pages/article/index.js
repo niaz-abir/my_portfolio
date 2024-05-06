@@ -20,7 +20,9 @@ const Article = () => {
   ];
   return (
     <section className="max-w-6xl mx-auto mb-8 text-white">
-      <h1 className="pt-12 pb-6 text-3xl font-bold">Article is here</h1>
+      <h1 className="pt-12 pb-6 text-3xl font-bold">
+        Discover Inspiring Articles Now
+      </h1>
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         {allArticle?.map((article) => (
           <div key={article?.id}>
