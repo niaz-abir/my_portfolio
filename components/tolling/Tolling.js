@@ -10,16 +10,44 @@ import { IoLogoSass } from "react-icons/io";
 import { FaBootstrap } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import working17 from "../../public/second.json";
+import { FaTools } from "react-icons/fa";
 
 import Lottie from "lottie-react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Tolling = () => {
+  const [skills, setSkills] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios?.get("http://localhost:5000/api/v1/skill"); // Adjust the URL as per your backend API
+        setSkills(response?.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <div className="py-6 mb-14">
       <h1 className="mb-4 text-4xl font-bold tracking-widest text-center font-primary text-accent-400 ">
         Tooling
       </h1>
-      <div className="flex justify-center mb-10">
+
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-5">
+        {skills?.map((skill) => (
+          <div key={skill?._id}>
+            <div className="flex items-center justify-center gap-3 bg-[#2c1831] p-5">
+              {" "}
+              <FaTools className="text-3xl font-bold text-gray-500"></FaTools>
+              <h1 className="font-bold text-white">{skill.skill}</h1>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* <div className="flex justify-center mb-10">
         <hr className="w-24"></hr>
       </div>
       <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 text-white text-xl mx-auto lg:max-w-[60rem]">
@@ -67,7 +95,7 @@ const Tolling = () => {
           <SiChakraui className="text-4xl text-purple-600"></SiChakraui>
           <h1>ShadcnUi</h1>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

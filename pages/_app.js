@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { useEffect } from "react";
 import AOS from "aos";
+import { Toaster } from "react-hot-toast";
 
 import "aos/dist/aos.css";
 
@@ -12,5 +13,10 @@ export default function App({ Component, pageProps }) {
       offset: 50,
     });
   }, []);
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Component {...pageProps} />
+      <Toaster />
+    </>
+  );
 }

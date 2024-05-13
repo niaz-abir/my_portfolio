@@ -34,8 +34,8 @@ const About = () => {
           </p>
           <div className="flex justify-center gap-4 mt-4 lg:justify-start">
             <Link href="#project">
-              <button>
-                <div class="b relative mx-auto h-14 w-36 flex justify-center items-center">
+              <div>
+                <button class="b relative mx-auto h-14 w-36 flex justify-center items-center">
                   <div class="i  h-14 w-36 text-lg text-white border-[#DB2955]  btn btn-outline hover:bg-[#DB2955] hover:text-black hover:transition-all hover:duration-1000  items-center  shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out rounded-none"></div>
                   <button class="text-center text-lg text-white font-semibold z-10 pointer-events-none">
                     Project
@@ -44,8 +44,8 @@ const About = () => {
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#010b1c] opacity-75"></span>
                     <span class="absolute inline-flex rounded-full h-6 w-6 bg-gradient-to-r from-[#472850] to-[#010b1c] "></span>
                   </span>
-                </div>
-              </button>
+                </button>
+              </div>
             </Link>
             <Link
               target="_blank"

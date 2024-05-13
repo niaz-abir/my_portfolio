@@ -70,13 +70,13 @@ const About = () => {
                 Resume
               </Link>
             </div>
-            <div className="flex justify-center mt-4 lg:justify-start ">
+            {/* <div className="flex justify-center mt-4 lg:justify-start ">
               <Link href="/">
                 <button className="text-lg text-white border-none rounded-none btn bg-[#010b1c] hover:bg-transparent hover:border-accent-400 hover:transition-all hover:duration-1000 hover:text-white">
                   Move Home
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
