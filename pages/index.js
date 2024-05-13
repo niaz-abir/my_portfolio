@@ -27,14 +27,9 @@ export default function Home({ projects }) {
       <div className="px-6 mx-auto max-w-[70rem]">
         <Header />
         <About />
-
         <Skill />
-
         <AllProjects projects={projects}></AllProjects>
-
-        {/* <AllProject ></AllProject> */}
         <Contact />
-
         <Connect />
         <Footer />
       </div>

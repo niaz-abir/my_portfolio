@@ -43,13 +43,6 @@ const Dashboard = ({ children }) => {
               </div>
               <div className="flex flex-col flex-1 gap-3">
                 <a
-                  className="flex items-center gap-4 px-4 py-2 mt-2 text-[20px] text-white  hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
-                  onClick={() => handleNavItemClick("add-skill")}
-                >
-                  <FaTools />
-                  Add-Skill
-                </a>
-                <a
                   className="flex items-center gap-4 px-4 py-2 mt-2 text-[20px] text-white hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
                   onClick={() => handleNavItemClick("all-skill")}
                 >
@@ -57,18 +50,18 @@ const Dashboard = ({ children }) => {
                   All-Skill
                 </a>
                 <a
-                  className="flex items-center px-4 py-2 mt-2  text-[20px] text-white gap-4 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
-                  onClick={() => handleNavItemClick("add-project")}
+                  className="flex items-center gap-4 px-4 py-2 mt-2 text-[20px] text-white  hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
+                  onClick={() => handleNavItemClick("add-skill")}
                 >
-                  <FaNetworkWired />
-                  Add-project
+                  <FaTools />
+                  Add-Skill
                 </a>
                 <a
-                  className="flex items-center px-4 py-2 mt-2  text-[22px] text-white gap-4 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
-                  onClick={() => handleNavItemClick("all-project")}
+                  className="flex items-center px-4 py-2 mt-2  text-[22px] text-white gap-4  hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
+                  onClick={() => handleNavItemClick("all-blog")}
                 >
-                  <MdArticle />
-                  All-Project
+                  <FaBloggerB />
+                  All-blog
                 </a>
                 <a
                   className="flex items-center px-4 py-2 mt-2  text-[22px] text-white gap-4 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
@@ -78,11 +71,19 @@ const Dashboard = ({ children }) => {
                   Add-blog
                 </a>
                 <a
-                  className="flex items-center px-4 py-2 mt-2  text-[22px] text-white gap-4  hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
-                  onClick={() => handleNavItemClick("all-blog")}
+                  className="flex items-center px-4 py-2 mt-2  text-[22px] text-white gap-4 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
+                  onClick={() => handleNavItemClick("all-project")}
                 >
-                  <FaBloggerB />
-                  All-blog
+                  <MdArticle />
+                  All-Project
+                </a>
+
+                <a
+                  className="flex items-center px-4 py-2 mt-2  text-[20px] text-white gap-4 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
+                  onClick={() => handleNavItemClick("add-project")}
+                >
+                  <FaNetworkWired />
+                  Add-project
                 </a>
               </div>
             </nav>
