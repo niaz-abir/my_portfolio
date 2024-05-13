@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import { MdArticle } from "react-icons/md";
-import { GrDashboard, GrProjects } from "react-icons/gr";
+
 import { FaTools } from "react-icons/fa";
 import { TbTools } from "react-icons/tb";
 import { FaNetworkWired } from "react-icons/fa";
 import { FaPen } from "react-icons/fa";
 
-import AddSkill from "../add-skill";
 import AllSkill from "../all-skill";
 import AddProject from "../add-project";
 import AllProject from "../all-project/page";
 import { FaBloggerB } from "react-icons/fa";
-import { TbLogs } from "react-icons/tb";
-
 import AddBlog from "../add-blog";
 import AllBlog from "../all-blog";
+import AddSkill from "../Add-skill";
 
 const Dashboard = ({ children }) => {
   const [activeContent, setActiveContent] = useState("dashboard"); // Default to dashboard content
