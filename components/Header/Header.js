@@ -1,10 +1,5 @@
 import Link from "next/link";
-import { MdOutlineManageAccounts } from "react-icons/md";
-import { RiCommandFill } from "react-icons/ri";
 import { RiMenuAddFill } from "react-icons/ri";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import styles from "./header.module.css";
 import working17 from "../../public/Animation3 (1).json";
 
 import Lottie from "lottie-react";

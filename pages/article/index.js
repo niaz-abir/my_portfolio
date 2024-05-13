@@ -1,7 +1,6 @@
-import Header from "@/components/Header/Header";
+import Header from "../../components/Header/Header";
 import axios from "axios";
-import Image from "next/image";
-import Link from "next/link";
+
 import { useEffect, useState } from "react";
 import { BsCalendar2Date } from "react-icons/bs";
 import { FaAddressBook } from "react-icons/fa";

@@ -1,22 +1,9 @@
-import { DiReact } from "react-icons/di";
-import { DiJavascript1 } from "react-icons/di";
-import { SiVercel } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { TbBrandTailwind } from "react-icons/tb";
-import { SiFirebase } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { SiChakraui } from "react-icons/si";
-import { IoLogoSass } from "react-icons/io";
-import { FaBootstrap } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import working17 from "../../public/second.json";
 import { FaTools } from "react-icons/fa";
 
-import Lottie from "lottie-react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const Tolling = () => {
+const Skill = () => {
   const [skills, setSkills] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -104,4 +91,4 @@ const Tolling = () => {
   );
 };
 
-export default Tolling;
+export default Skill;

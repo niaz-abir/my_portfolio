@@ -1,18 +1,19 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import Header from "@/components/Header/Header";
-import About from "@/components/about/About";
-import Tolling from "@/components/tolling/Tolling";
-import AllProject from "@/components/project/AllProject";
-import Contact from "@/components/contact/Contact";
-import Connect from "@/components/connect/Connect";
+
+// import Tolling from "@/components/tolling/Tolling";
+// import AllProject from "@/components/project/AllProject";
 
 const inter = Inter({ subsets: ["latin"] });
+import { getProjects } from "../utils/getproject";
 
-import { getProjects } from "@/utils/getproject";
-import Footer from "@/components/Footer/Footer";
+import About from "../components/about/About";
+import Skill from "../components/Skill/Skill";
+import AllProjects from "../components/Projects/AllProjects";
+import Header from "../components/Header/Header";
+import Connect from "../components/connect/Connect";
+import Contact from "../components/contact/Contact";
+import Footer from "../components/Footer/Footer";
 
 export default function Home({ projects }) {
   return (
@@ -24,13 +25,18 @@ export default function Home({ projects }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="px-6 mx-auto max-w-[70rem]">
-        <Header></Header>
-        <About></About>
-        <Tolling></Tolling>
-        <AllProject projects={projects}></AllProject>
-        <Contact></Contact>
-        <Connect></Connect>
-        <Footer></Footer>
+        <Header />
+        <About />
+
+        <Skill />
+
+        <AllProjects projects={projects}></AllProjects>
+
+        {/* <AllProject ></AllProject> */}
+        <Contact />
+
+        <Connect />
+        <Footer />
       </div>
     </>
   );

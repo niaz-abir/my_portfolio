@@ -1,4 +1,4 @@
-import { getProjects } from "@/utils/getproject";
+import { getProjects } from "../../utils/getproject";
 import Image from "next/image";
 
 const projectDetail = ({ filteredProject }) => {

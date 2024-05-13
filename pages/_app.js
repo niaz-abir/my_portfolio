@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import { Toaster } from "react-hot-toast";

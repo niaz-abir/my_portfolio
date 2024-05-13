@@ -1,7 +1,6 @@
 import { AiFillGithub } from "react-icons/ai";
 import { ImTwitter } from "react-icons/im";
 import { AiFillLinkedin } from "react-icons/ai";
-import { FiInstagram } from "react-icons/fi";
 import { AiOutlineFacebook } from "react-icons/ai";
 import Link from "next/link";
 const Connect = () => {
