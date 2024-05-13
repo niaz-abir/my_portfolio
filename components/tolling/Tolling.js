@@ -21,7 +21,9 @@ const Tolling = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios?.get("http://localhost:5000/api/v1/skill"); // Adjust the URL as per your backend API
+        const response = await axios?.get(
+          "https://portfolio-server-black-eight.vercel.app/skill"
+        ); // Adjust the URL as per your backend API
         setSkills(response?.data);
       } catch (error) {
         console.error("Error fetching data:", error);

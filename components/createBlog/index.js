@@ -22,7 +22,7 @@ const CreateBlog = () => {
 
     // Make POST request to backend
     axios
-      .post("http://localhost:5000/api/v1/create-blog", {
+      .post("https://portfolio-server-black-eight.vercel.app/create-blog", {
         title,
         date,
         content,

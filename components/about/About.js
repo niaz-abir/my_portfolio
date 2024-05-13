@@ -32,40 +32,27 @@ const About = () => {
             great website.Coding is fascination and Try to be dedicate and learn
             latest Tools and Technology.
           </p>
+
           <div className="flex justify-center gap-4 mt-4 lg:justify-start">
-            <Link href="#project">
-              <div>
-                <button class="b relative mx-auto h-14 w-36 flex justify-center items-center">
-                  <div class="i  h-14 w-36 text-lg text-white border-[#DB2955]  btn btn-outline hover:bg-[#DB2955] hover:text-black hover:transition-all hover:duration-1000  items-center  shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out rounded-none"></div>
-                  <button class="text-center text-lg text-white font-semibold z-10 pointer-events-none">
-                    Project
-                  </button>
-                  <span class="absolute flex h-6 w-6 top-0 right-0 transform translate-x-2.5 -translate-y-2.5">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#010b1c] opacity-75"></span>
-                    <span class="absolute inline-flex rounded-full h-6 w-6 bg-gradient-to-r from-[#472850] to-[#010b1c] "></span>
-                  </span>
+            <div>
+              <Link href="#project">
+                <button className="btn hover:bg-[#DB2955] bg-transparent border-2 border-[#DB2955] text-[18px] h-14 w-36">
+                  project
                 </button>
-              </div>
-            </Link>
-            <Link
-              target="_blank"
-              href={
-                "https://drive.google.com/file/d/1KraBKoNwWBjUW_m1h5cezeNlUZEqBM9g/view?usp=sharing"
-              }
-            >
-              <button>
-                <div class="b relative mx-auto h-14  w-36 flex justify-center items-center">
-                  <div class="i  h-14 w-36 text-lg text-white border-[#DB2955]  btn btn-outline bg-[#DB2955] hover:bg-transparent hover:border-[#DB2955]    hover:text-black hover:transition-all hover:duration-1000  items-center  shadow-2xl cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out rounded-none"></div>
-                  <a class="text-center text-lg text-white font-semibold z-10 pointer-events-none">
-                    Resume
-                  </a>
-                  <span class="absolute flex h-6 w-6 top-0 right-0 transform translate-x-2.5 -translate-y-2.5">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#010b1c] opacity-75"></span>
-                    <span class="absolute inline-flex rounded-full h-6 w-6 bg-gradient-to-r from-[#472850] to-[#010b1c] "></span>
-                  </span>
-                </div>
-              </button>
-            </Link>
+              </Link>
+            </div>
+            <div>
+              <Link
+                target="_blank"
+                href={
+                  "https://drive.google.com/file/d/1KraBKoNwWBjUW_m1h5cezeNlUZEqBM9g/view?usp=sharing"
+                }
+              >
+                <button className="btn bg-[#DB2955] hover:bg-transparent border-2 border-[#DB2955] text-[18px] h-14 w-36">
+                  Resume
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
         <Image

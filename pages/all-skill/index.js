@@ -8,7 +8,9 @@ const AllSkill = () => {
     // Fetch data from the backend when the component mounts
     const fetchData = async () => {
       try {
-        const response = await axios?.get("http://localhost:5000/api/v1/skill"); // Adjust the URL as per your backend API
+        const response = await axios?.get(
+          "https://portfolio-server-black-eight.vercel.app/skill"
+        ); // Adjust the URL as per your backend API
         setSkills(response?.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -20,7 +22,9 @@ const AllSkill = () => {
 
   const handleDeleteSkill = async (id) => {
     try {
-      await axios?.delete(`http://localhost:5000/api/v1/delete-skill/${id}`);
+      await axios?.delete(
+        `https://portfolio-server-black-eight.vercel.app/delete-skill/${id}`
+      );
       // Remove the deleted skill from the local state
       setSkills(skills?.filter((skill) => skill?._id !== id));
     } catch (error) {

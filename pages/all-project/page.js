@@ -9,7 +9,7 @@ const AllProject = () => {
     const fetchData = async () => {
       try {
         const response = await axios?.get(
-          "http://localhost:5000/api/v1/project"
+          "https://portfolio-server-black-eight.vercel.app/project"
         ); // Adjust the URL as per your backend API
         setSkills(response?.data);
       } catch (error) {
@@ -22,7 +22,9 @@ const AllProject = () => {
 
   const handleDeleteSkill = async (id) => {
     try {
-      await axios?.delete(`http://localhost:5000/api/v1/delete-project/${id}`);
+      await axios?.delete(
+        `https://portfolio-server-black-eight.vercel.app/delete-project/${id}`
+      );
       // Remove the deleted skill from the local state
       setSkills(skills?.filter((skill) => skill?._id !== id));
     } catch (error) {

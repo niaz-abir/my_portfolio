@@ -9,7 +9,9 @@ const AllBlog = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios?.get("http://localhost:5000/api/v1/blog"); // Adjust the URL as per your backend API
+        const response = await axios?.get(
+          "https://portfolio-server-black-eight.vercel.app/blog"
+        ); // Adjust the URL as per your backend API
         setBlogs(response?.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -21,7 +23,9 @@ const AllBlog = () => {
 
   const handleDeleteId = async (id) => {
     try {
-      await axios?.delete(`http://localhost:5000/api/v1/delete-blog/${id}`);
+      await axios?.delete(
+        `https://portfolio-server-black-eight.vercel.app/delete-blog/${id}`
+      );
       // Remove the deleted blog from the local state
       setBlogs(blog?.filter((blog) => blog?._id !== id));
     } catch (error) {
