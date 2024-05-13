@@ -11,7 +11,7 @@ const AllBlog = () => {
       try {
         const response = await axios?.get(
           "https://portfolio-server-black-eight.vercel.app/blog"
-        ); // Adjust the URL as per your backend API
+        );
         setBlogs(response?.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -26,7 +26,7 @@ const AllBlog = () => {
       await axios?.delete(
         `https://portfolio-server-black-eight.vercel.app/delete-blog/${id}`
       );
-      // Remove the deleted blog from the local state
+      // remove it
       setBlogs(blog?.filter((blog) => blog?._id !== id));
     } catch (error) {
       console.error("Error deleting blog:", error);
