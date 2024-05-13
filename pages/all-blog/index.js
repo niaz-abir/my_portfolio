@@ -10,7 +10,7 @@ const AllBlog = () => {
     const fetchData = async () => {
       try {
         const response = await axios?.get(
-          "https://portfolio-server-black-eight.vercel.app/blog"
+          "https://portfolio-server-black-eight.vercel.app/api/v1/blog"
         );
         setBlogs(response?.data);
       } catch (error) {
@@ -24,7 +24,7 @@ const AllBlog = () => {
   const handleDeleteId = async (id) => {
     try {
       await axios?.delete(
-        `https://portfolio-server-black-eight.vercel.app/delete-blog/${id}`
+        `https://portfolio-server-black-eight.vercel.app/api/v1/delete-blog/${id}`
       );
       // remove it
       setBlogs(blog?.filter((blog) => blog?._id !== id));

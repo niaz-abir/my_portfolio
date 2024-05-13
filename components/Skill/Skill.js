@@ -9,7 +9,7 @@ const Skill = () => {
     const fetchData = async () => {
       try {
         const response = await axios?.get(
-          "https://portfolio-server-black-eight.vercel.app/skill"
+          "https://portfolio-server-black-eight.vercel.app/api/v1/skill"
         ); // Adjust the URL as per your backend API
         setSkills(response?.data);
       } catch (error) {

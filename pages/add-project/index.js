@@ -56,7 +56,7 @@ const AddProject = () => {
       };
 
       const result = await axios.post(
-        "https://portfolio-server-black-eight.vercel.app/create-project",
+        "https://portfolio-server-black-eight.vercel.app/api/v1/create-project",
         formDataToSubmit
       );
       toast.success("project added");

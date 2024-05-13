@@ -14,7 +14,7 @@ const AddSkill = () => {
       };
       console.log(formDataToSubmit);
       const response = await axios.post(
-        "https://portfolio-server-black-eight.vercel.app/create-skill",
+        "https://portfolio-server-black-eight.vercel.app/api/v1/create-skill",
         formDataToSubmit
       ); // Replace "/api/skills" with your actual backend endpoint
       console.log("Response from server:", response.data);

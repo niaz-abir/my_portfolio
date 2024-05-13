@@ -22,11 +22,14 @@ const CreateBlog = () => {
 
     // Make POST request to backend
     axios
-      .post("https://portfolio-server-black-eight.vercel.app/create-blog", {
-        title,
-        date,
-        content,
-      })
+      .post(
+        "https://portfolio-server-black-eight.vercel.app/api/v1/create-blog",
+        {
+          title,
+          date,
+          content,
+        }
+      )
 
       .then((response) => {
         console.log("Blog submitted successfully:", response.data);
