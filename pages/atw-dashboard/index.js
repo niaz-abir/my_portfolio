@@ -14,7 +14,7 @@ import AddBlog from "../add-blog";
 import AllBlog from "../all-blog";
 import AddSkill from "../Add-skill";
 
-const Dashboard = ({ children }) => {
+const Dashboard = () => {
   const [activeContent, setActiveContent] = useState("dashboard"); // Default to dashboard content
 
   const handleNavItemClick = (content) => {
@@ -97,7 +97,7 @@ const Dashboard = ({ children }) => {
           <div className="">
             <div className="px-4 ">
               <div className="relative ">
-                {activeContent === "add-skill" && <AddSkill />}{" "}
+                {/* {activeContent === "add-skill" && <AddSkill />}{" "} */}
                 {activeContent === "all-skill" && <AllSkill />}{" "}
                 {activeContent === "add-project" && <AddProject />}{" "}
                 {activeContent === "all-project" && <AllProject />}{" "}
