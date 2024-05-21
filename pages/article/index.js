@@ -1,27 +1,27 @@
-import Header from "../../components/Header/Header";
-import axios from "axios";
+// import Header from "../../components/Header/Header";
+// import axios from "axios";
 
-import { useEffect, useState } from "react";
-import { BsCalendar2Date } from "react-icons/bs";
-import { FaAddressBook } from "react-icons/fa";
-import { TfiWrite } from "react-icons/tfi";
+// import { useEffect, useState } from "react";
+// import { BsCalendar2Date } from "react-icons/bs";
+// import { FaAddressBook } from "react-icons/fa";
+// import { TfiWrite } from "react-icons/tfi";
 
 const Article = () => {
-  const [blog, setBlogs] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios?.get(
-          "https://portfolio-server-black-eight.vercel.app/api/v1/blog"
-        ); // Adjust the URL as per your backend API
-        setBlogs(response?.data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
+  // const [blog, setBlogs] = useState([]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios?.get(
+  //         "https://portfolio-server-black-eight.vercel.app/api/v1/blog"
+  //       ); // Adjust the URL as per your backend API
+  //       setBlogs(response?.data);
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   return (
     // <section>

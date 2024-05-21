@@ -2,9 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
-import { GrWebcam } from "react-icons/gr";
 import { FaGithubAlt } from "react-icons/fa";
-import styles from "./AllProjects.module.css";
 
 const AllProjects = ({ projects }) => {
   return (
@@ -72,7 +70,7 @@ const AllProjects = ({ projects }) => {
                   </div>
                   <Link
                     href={`/projectDetails/${project?.id}`}
-                    className={`${styles.btnProject} btn rounded-[3px] out border-accent-400 bg-accent-400 hover:text-black font-semibold`}
+                    className={` btn rounded-[3px] out border-accent-400 bg-accent-400 hover:text-black font-semibold`}
                   >
                     {" "}
                     Details
