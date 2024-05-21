@@ -25,30 +25,33 @@ const AddSkill = () => {
     }
   };
   return (
-    <section className="flex justify-center mt-56">
-      <div className="flex flex-col">
-        <h1 className="flex items-center font-semibold gap-4 pb-6 text-3xl text-[#DB2955]">
-          <FaAddressBook />
-          Add Your Skill
-        </h1>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="pb-4">
-            <input
-              type="text"
-              placeholder="Type here"
-              className="input input-bordered w-full max-w-xs text-[18px] bg-gray-700 text-white"
-              {...register("skill")}
-            />
-          </div>
+    // <section className="flex justify-center mt-56">
+    //   <div className="flex flex-col">
+    //     <h1 className="flex items-center font-semibold gap-4 pb-6 text-3xl text-[#DB2955]">
+    //       <FaAddressBook />
+    //       Add Your Skill
+    //     </h1>
+    //     <form onSubmit={handleSubmit(onSubmit)}>
+    //       <div className="pb-4">
+    //         <input
+    //           type="text"
+    //           placeholder="Type here"
+    //           className="input input-bordered w-full max-w-xs text-[18px] bg-gray-700 text-white"
+    //           {...register("skill")}
+    //         />
+    //       </div>
 
-          <div>
-            <button className="px-2 h-[50px] py-4 w-[300px] font-bold text-white bg-purple-500">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+    //       <div>
+    //         <button className="px-2 h-[50px] py-4 w-[300px] font-bold text-white bg-purple-500">
+    //           Submit
+    //         </button>
+    //       </div>
+    //     </form>
+    //   </div>
+    // </section>
+    <div>
+      <h1>Add skill</h1>
+    </div>
   );
 };
 
