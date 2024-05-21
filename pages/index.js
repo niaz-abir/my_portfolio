@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 // import Tolling from "@/components/tolling/Tolling";
 // import AllProject from "@/components/project/AllProject";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 import { getProjects } from "../utils/getproject";
 
 import About from "../components/about/About";

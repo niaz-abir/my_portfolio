@@ -12,7 +12,6 @@ import AllProject from "../all-project/page";
 import { FaBloggerB } from "react-icons/fa";
 import AddBlog from "../add-blog";
 import AllBlog from "../all-blog";
-import AddSkill from "../Add-skill";
 
 const Dashboard = () => {
   const [activeContent, setActiveContent] = useState("dashboard"); // Default to dashboard content
