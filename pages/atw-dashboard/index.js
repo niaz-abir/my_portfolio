@@ -103,7 +103,7 @@ const Dashboard = ({ children }) => {
                 {activeContent === "all-project" && <AllProject />}{" "}
                 {activeContent === "add-blog" && <AddBlog />}{" "}
                 {activeContent === "all-blog" && <AllBlog />}{" "}
-                {/* Render ArticleContent component when activeContent is 'article' */}
+                {/* Render ArticleContent here when activeContent is 'article' */}
               </div>
             </div>
           </div>
