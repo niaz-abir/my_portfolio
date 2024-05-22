@@ -2,6 +2,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { ImTwitter } from "react-icons/im";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiOutlineFacebook } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
 const Connect = () => {
   return (
@@ -21,25 +22,21 @@ const Connect = () => {
             target="_blank"
             className="flex flex-row items-center gap-2"
           >
-            <h1>Github</h1>
             <AiFillGithub className="text-[#FF8DC7]"></AiFillGithub>
+            <h1>Github</h1>
           </Link>
-          {/* <div className="flex flex-row items-center gap-2">
-            <h1>Instagram</h1>
-            <FiInstagram className="mr-3 text-green-600"></FiInstagram>
-          </div> */}
 
           <Link
             href={"https://www.linkedin.com/in/niaz-uddin-abir/"}
             target="_blank"
             className="flex flex-row items-center gap-2"
           >
+            <AiFillLinkedin className="text-[#0077B5]"></AiFillLinkedin>
             <h1>Linkedin</h1>
-            <AiFillLinkedin className="text-[#00ABB3]"></AiFillLinkedin>
           </Link>
           <div className="flex flex-row items-center gap-2">
-            <h1>Twitter</h1>
             <ImTwitter className="text-[#674188]"></ImTwitter>
+            <h1>Twitter</h1>
           </div>
 
           <Link
@@ -47,8 +44,8 @@ const Connect = () => {
             target="_blank"
             className="flex flex-row items-center gap-2"
           >
+            <BsFacebook className="text-[#82AAE3]"></BsFacebook>
             <h1>Facebook</h1>
-            <AiOutlineFacebook className="text-[#82AAE3]"></AiOutlineFacebook>
           </Link>
         </div>
       </div>

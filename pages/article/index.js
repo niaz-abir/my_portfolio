@@ -1,6 +1,8 @@
 // import Header from "../../components/Header/Header";
 // import axios from "axios";
 
+import Header from "../../components/Header/Header";
+
 // import { useEffect, useState } from "react";
 // import { BsCalendar2Date } from "react-icons/bs";
 // import { FaAddressBook } from "react-icons/fa";
@@ -63,9 +65,15 @@ const Article = () => {
     //     </div>
     //   </div>
     // </section>
-    <div className="font-bold text-center mt-14">
-      <h1>Article Is Loading.........</h1>
-    </div>
+
+    <section>
+      <div className="max-w-6xl mx-auto">
+        <Header />
+      </div>
+      <div className="text-2xl font-bold text-center text-white mt-14">
+        <h1>Article Is Loading.........</h1>
+      </div>
+    </section>
   );
 };
 

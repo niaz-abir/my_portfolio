@@ -5,7 +5,7 @@ import working17 from "../../public/Animation3 (1).json";
 import Lottie from "lottie-react";
 const Header = () => {
   return (
-    <div className="flex justify-between text-white  shadow-md navbar shadow-[#231427]">
+    <div className="flex justify-between text-white mb-8  shadow-md navbar shadow-[#231427]">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

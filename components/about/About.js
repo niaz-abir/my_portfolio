@@ -15,7 +15,7 @@ const About = () => {
   return (
     <>
       <div
-        className="grid items-center grid-cols-1 gap-10 md:grid-cols-2 lg:-mt-24 justify-items-center py-14 mt-36 "
+        className="grid items-center grid-cols-1 gap-10 ml-3 lg:ml-8 md:grid-cols-2 lg:-mt-24 justify-items-center py-14 mt-36 "
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="2500"
@@ -27,16 +27,16 @@ const About = () => {
           <h2 className="text-2xl font-semibold text-white font-primary">
             A Front-End Developer
           </h2>
-          <p className="max-w-md mx-auto text-lg text-gray-400 md:mx-0">
-            A curious learner and an analytical minded developer.Try to make
-            great website.Coding is fascination and Try to be dedicate and learn
-            latest Tools and Technology.
+          <p className="max-w-md mx-auto text-lg text-justify text-gray-400 md:mx-0">
+            A curious learner and analytical developer, I strive to create
+            outstanding websites. Coding fascinates me, and I am dedicated to
+            learning the latest tools and technologies.
           </p>
 
           <div className="flex justify-center gap-4 mt-4 lg:justify-start">
             <div>
               <Link href="#project">
-                <button className="btn hover:bg-[#DB2955] bg-transparent border-2 border-[#DB2955] text-[18px] h-14 w-36">
+                <button className="btn hover:bg-[#DB2955] rounded-none hover:rounded-md bg-transparent border-2 border-[#DB2955] text-[18px] h-14 w-36">
                   project
                 </button>
               </Link>
@@ -48,7 +48,7 @@ const About = () => {
                   "https://drive.google.com/file/d/1KraBKoNwWBjUW_m1h5cezeNlUZEqBM9g/view?usp=sharing"
                 }
               >
-                <button className="btn bg-[#DB2955] hover:bg-transparent border-2 border-[#DB2955] text-[18px] h-14 w-36">
+                <button className="btn bg-[#ad2245] rounded-none hover:rounded-md hover:bg-transparent border-2 border-[#DB2955] text-[18px] h-14 w-36">
                   Resume
                 </button>
               </Link>
@@ -59,8 +59,8 @@ const About = () => {
           className="rounded-md "
           src="/profile7.png"
           alt=""
-          width="500"
-          height="200"
+          width="440"
+          height="100"
         ></Image>
       </div>
     </>

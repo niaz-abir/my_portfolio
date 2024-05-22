@@ -1,10 +1,14 @@
 import React from "react";
 import "aos/dist/aos.css";
 import Link from "next/link";
+import Header from "../../components/Header/Header";
 
 const About = () => {
   return (
     <>
+      <section className="max-w-6xl mx-auto">
+        <Header />
+      </section>
       <div className="w-full pl-4 pr-4 mx-auto lg:w-2/3">
         <div className="mt-24 mb-20 ml-4 ">
           <div className="gap-4 text-center text-white md:text-start">
