@@ -94,11 +94,6 @@ const Contact = () => {
             <button className={`${styles.btnAll} btn rounded-none`}>
               Send Message
             </button>
-
-            {/* 
-            <button className="rounded-none btn bg-accent-400 text-dark-500 hover:text-accent-400">
-              Send Message
-            </button> */}
           </form>
         </div>
       </div>
