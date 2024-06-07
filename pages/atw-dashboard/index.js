@@ -14,7 +14,6 @@ import AddBlog from "../add-blog";
 import AllBlog from "../all-blog";
 
 import AddArticle from "../add-article";
-import AllArticle from "../all-article";
 
 const Dashboard = () => {
   const [activeContent, setActiveContent] = useState("dashboard"); // Default to dashboard content
