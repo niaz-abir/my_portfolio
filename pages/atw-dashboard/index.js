@@ -13,6 +13,9 @@ import { FaBloggerB } from "react-icons/fa";
 import AddBlog from "../add-blog";
 import AllBlog from "../all-blog";
 
+import AddArticle from "../add-article";
+import AllArticle from "../all-article";
+
 const Dashboard = () => {
   const [activeContent, setActiveContent] = useState("dashboard"); // Default to dashboard content
 
@@ -82,6 +85,14 @@ const Dashboard = () => {
                   <FaNetworkWired />
                   Add-project
                 </a>
+
+                <a
+                  className="flex items-center px-4 py-2 mt-2  text-[20px] text-white gap-4 hover:bg-gray-400 hover:bg-opacity-25 rounded-2xl"
+                  onClick={() => handleNavItemClick("add-article")}
+                >
+                  <FaNetworkWired />
+                  Add-Article
+                </a>
               </div>
             </nav>
           </div>
@@ -102,6 +113,7 @@ const Dashboard = () => {
                 {activeContent === "all-project" && <AllProject />}{" "}
                 {activeContent === "add-blog" && <AddBlog />}{" "}
                 {activeContent === "all-blog" && <AllBlog />}{" "}
+                {activeContent === "add-article" && <AddArticle />}{" "}
                 {/* Render ArticleContent here when activeContent is 'article' */}
               </div>
             </div>
