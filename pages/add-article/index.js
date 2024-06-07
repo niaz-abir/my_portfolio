@@ -34,7 +34,7 @@ const AddArticle = () => {
       console.log(articleData);
 
       const result = await axios?.post(
-        "http://localhost:5000/api/v1/create-article",
+        "https://portfolio-server-black-eight.vercel.app/api/v1/create-article",
         articleData
       );
       if (result) {

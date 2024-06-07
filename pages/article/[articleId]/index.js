@@ -21,7 +21,7 @@ const ArticleDetails = () => {
         console.log(articleId);
         try {
           const response = await axios.get(
-            `http://localhost:5000/api/v1/article/${articleId}`
+            `https://portfolio-server-black-eight.vercel.app/api/v1/article/${articleId}`
           );
           console.log("Data fetched:", response.data);
           setArticle(response.data);

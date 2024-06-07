@@ -12,7 +12,7 @@ const Article = () => {
     const fetchData = async () => {
       try {
         const response = await axios?.get(
-          "http://localhost:5000/api/v1/article"
+          "https://portfolio-server-black-eight.vercel.app/api/v1/article"
         ); // Adjust the URL as per your backend API
         setBlogs(response?.data);
       } catch (error) {
