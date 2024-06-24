@@ -50,48 +50,48 @@ const Skill = () => {
 
     <section className="mb-14">
       <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 text-white text-xl mx-auto lg:max-w-[60rem]">
-        <div className="flex items-center justify-center gap-3 bg-[#2c1831] p-5">
+        <div className="flex items-center hover:rounded-md duration-300 justify-center gap-3 bg-[#2c1831] p-5">
           {" "}
           <DiReact className="text-4xl text-sky-400"></DiReact>
           <h1>React</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
+        <div className="flex items-center hover:rounded-md duration-300 justify-center gap-3 p-5 bg-[#2c1831]">
           <DiJavascript1 className="text-4xl text-yellow-400"></DiJavascript1>
           <h1>Javascript</h1>
         </div>
 
-        <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
+        <div className="flex items-center hover:rounded-md duration-300 justify-center gap-3 p-5 bg-[#2c1831]">
           <SiVercel className="text-4xl text-black"></SiVercel>
           <h1>Nextjs</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
+        <div className="flex items-center hover:rounded-md duration-300 justify-center gap-3 p-5 bg-[#2c1831]">
           <SiTypescript className="text-4xl text-sky-400"></SiTypescript>
           <h1>Typescript</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
+        <div className="flex items-center hover:rounded-md duration-300 justify-center gap-3 p-5 bg-[#2c1831]">
           <TbBrandTailwind className="text-4xl text-sky-400"></TbBrandTailwind>
           <h1>Tailwind</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
+        <div className="flex items-center hover:rounded-md duration-300 justify-center gap-3 p-5 bg-[#2c1831]">
           {" "}
           <SiFirebase className="text-4xl text-yellow-400"></SiFirebase>
           <h1>Firebase</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
+        <div className="flex items-center hover:rounded-md duration-300 justify-center gap-3 p-5 bg-[#2c1831]">
           <SiMongodb className="text-4xl text-green-700"></SiMongodb>
           <h1>MongoDB</h1>
         </div>
 
-        <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
+        <div className="flex items-center hover:rounded-md duration-300 justify-center gap-3 p-5 bg-[#2c1831]">
           <SiRedux className="text-4xl text-blue-400 "></SiRedux>
           <h1>Redux</h1>
         </div>
-        <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
+        <div className="flex items-center hover:rounded-md duration-300 justify-center gap-3 p-5 bg-[#2c1831]">
           <IoLogoSass className="text-4xl text-pink-600"></IoLogoSass>
           <h1>Sass</h1>
         </div>
 
-        <div className="flex items-center justify-center gap-3 p-5 bg-[#2c1831]">
+        <div className="flex items-center hover:rounded-md duration-300 justify-center gap-3 p-5 bg-[#2c1831]">
           <SiChakraui className="text-4xl text-purple-600"></SiChakraui>
           <h1>ShadcnUi</h1>
         </div>

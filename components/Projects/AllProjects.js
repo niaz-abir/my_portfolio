@@ -70,7 +70,7 @@ const AllProjects = ({ projects }) => {
                   </div>
                   <Link
                     href={`/projectDetails/${project?.id}`}
-                    className={` btn rounded-[3px] out border-accent-400 bg-accent-400 hover:text-black font-semibold`}
+                    className={` btn rounded-[3px] out border-accent-400 bg-accent-400 hover:text-white font-semibold`}
                   >
                     {" "}
                     Details
