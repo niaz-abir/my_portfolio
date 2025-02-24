@@ -15,7 +15,7 @@ const About = () => {
   return (
     <>
       <div
-        className="grid items-center grid-cols-1 gap-10 ml-3 lg:ml-8 md:grid-cols-2 lg:-mt-24 justify-items-center py-14 mt-36 "
+        className="grid items-center grid-cols-1 gap-10 mb-20 ml-3 lg:mt-10 lg:ml-8 md:grid-cols-2 justify-items-center py-14 mt-36 "
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="2500"
@@ -55,13 +55,13 @@ const About = () => {
             </div>
           </div>
         </div>
-        <Image
+        {/* <Image
           className="rounded-md "
-          src="/profile7.png"
+          src="/prom6.jpg"
           alt=""
           width="440"
           height="100"
-        ></Image>
+        ></Image> */}
       </div>
     </>
   );
